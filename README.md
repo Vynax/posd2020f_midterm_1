@@ -6,7 +6,9 @@
 * **For this test we provide [SAMPLE UT TEST](https://ssl-gitlab.csie.ntut.edu.tw/posd2020f_hw/posd2020f_midterm_1/tree/master/test) and [MAKEFILE](https://ssl-gitlab.csie.ntut.edu.tw/posd2020f_hw/posd2020f_midterm_1/blob/master/makefile), the logic of sample ut test were same as those on the Jenkins TA test with some test data differences, and the makefile is exactly same as TA's.**  
 
 ## **Score**  
-
+* TA Unit Test On Jenkins: 100%  
+* -10 points for each fail TA test.  
+* -40 for violate OCP as dicription in notice.  
 
 ## **Resources Allowed To Use**  
 [cplusplus](http://www.cplusplus.com/)  
