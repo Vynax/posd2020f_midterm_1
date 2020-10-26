@@ -81,10 +81,10 @@ TEST(FolderTest, update_path) {
 
 TEST_F(FolderTestSuite, size_change_after_add_nodes){
 
-    ASSERT_DOUBLE_EQ(0, trash->size());
-    ASSERT_DOUBLE_EQ(0, community->size());
-    ASSERT_DOUBLE_EQ(0, common->size());
-    ASSERT_DOUBLE_EQ(0, favorite->size());
+    ASSERT_EQ(0, trash->size());
+    ASSERT_EQ(0, community->size());
+    ASSERT_EQ(0, common->size());
+    ASSERT_EQ(0, favorite->size());
     
     addNodes();
     
