@@ -91,7 +91,7 @@ TEST_F(IteratorTestSuite, folder_iterate_current_item) {
 
     EXPECT_EQ("1", node->id());
     EXPECT_EQ("chrome", node->name());
-    EXPECT_EQ(50.15, node->size());
+    EXPECT_DOUBLE_EQ(50.15, node->size());
     EXPECT_EQ("/favorite/chrome", node->route());
 }
 
@@ -104,7 +104,7 @@ TEST_F(IteratorTestSuite, folder_iterate_current_next) {
 
     EXPECT_EQ("2", node->id());
     EXPECT_EQ("facebook", node->name());
-    EXPECT_EQ(30.32, node->size());
+    EXPECT_DOUBLE_EQ(30.32, node->size());
     EXPECT_EQ("/favorite/facebook", node->route());
 
     ASSERT_NO_THROW(it->next());
@@ -114,7 +114,7 @@ TEST_F(IteratorTestSuite, folder_iterate_current_next) {
 
     EXPECT_EQ("8", node->id());
     EXPECT_EQ("common", node->name());
-    EXPECT_EQ(191.28, node->size());
+    EXPECT_DOUBLE_EQ(191.28, node->size());
     EXPECT_EQ("/favorite/common", node->route());
 }
 

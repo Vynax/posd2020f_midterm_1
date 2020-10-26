@@ -32,7 +32,7 @@ TEST(AppTest, name) {
 
 TEST(AppTest, size) {
     Node* myApp = new App("0", "myApp", 123.456);
-    ASSERT_EQ(123.456, myApp->size());
+    ASSERT_DOUBLE_EQ(123.456, myApp->size());
 }
 
 TEST(AppTest, route) {

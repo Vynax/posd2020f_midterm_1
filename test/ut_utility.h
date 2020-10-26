@@ -60,13 +60,13 @@ TEST_F(UtlilityTestSuite, folder_filter_by_size_between_80_and_50) {
     ASSERT_EQ(3, nodes.size());
     
     EXPECT_EQ("1", nodes[0]->id());
-    EXPECT_EQ(50.15, nodes[0]->size());
+    EXPECT_DOUBLE_EQ(50.15, nodes[0]->size());
 
     EXPECT_EQ("6", nodes[1]->id());
-    EXPECT_EQ(60.66, nodes[1]->size());
+    EXPECT_DOUBLE_EQ(60.66, nodes[1]->size());
 
     EXPECT_EQ("4", nodes[2]->id());
-    EXPECT_EQ(70.07, nodes[2]->size());
+    EXPECT_DOUBLE_EQ(70.07, nodes[2]->size());
 }
 
 TEST_F(UtlilityTestSuite, folder_filter_by_size_between_999_and_0) {
@@ -75,31 +75,31 @@ TEST_F(UtlilityTestSuite, folder_filter_by_size_between_999_and_0) {
     ASSERT_EQ(9, nodes.size());
 
     EXPECT_EQ("1", nodes[0]->id());
-    EXPECT_EQ(50.15, nodes[0]->size());
+    EXPECT_DOUBLE_EQ(50.15, nodes[0]->size());
 
     EXPECT_EQ("2", nodes[1]->id());
-    EXPECT_EQ(30.32, nodes[1]->size());
+    EXPECT_DOUBLE_EQ(30.32, nodes[1]->size());
 
     EXPECT_EQ("8", nodes[2]->id());
-    EXPECT_EQ(191.28, nodes[2]->size());
+    EXPECT_DOUBLE_EQ(191.28, nodes[2]->size());
 
     EXPECT_EQ("3", nodes[3]->id());
-    EXPECT_EQ(20.21, nodes[3]->size());
+    EXPECT_DOUBLE_EQ(20.21, nodes[3]->size());
 
     EXPECT_EQ("9", nodes[4]->id());
-    EXPECT_EQ(101, nodes[4]->size());
+    EXPECT_DOUBLE_EQ(101, nodes[4]->size());
 
     EXPECT_EQ("5", nodes[5]->id());
-    EXPECT_EQ(40.34, nodes[5]->size());
+    EXPECT_DOUBLE_EQ(40.34, nodes[5]->size());
 
     EXPECT_EQ("6", nodes[6]->id());
-    EXPECT_EQ(60.66, nodes[6]->size());
+    EXPECT_DOUBLE_EQ(60.66, nodes[6]->size());
 
     EXPECT_EQ("10", nodes[7]->id());
-    EXPECT_EQ(0, nodes[7]->size());
+    EXPECT_DOUBLE_EQ(0, nodes[7]->size());
 
     EXPECT_EQ("4", nodes[8]->id());
-    EXPECT_EQ(70.07, nodes[8]->size());
+    EXPECT_DOUBLE_EQ(70.07, nodes[8]->size());
 }
 
 

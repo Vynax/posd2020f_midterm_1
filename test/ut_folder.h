@@ -68,7 +68,7 @@ TEST(FolderTest, route) {
 
 TEST(FolderTest, size) {
     Node* rootFolder = new Folder("0", "rootFolder");
-    ASSERT_EQ(0, rootFolder->size());
+    ASSERT_DOUBLE_EQ(0, rootFolder->size());
 }
 
 TEST(FolderTest, update_path) {
@@ -81,17 +81,17 @@ TEST(FolderTest, update_path) {
 
 TEST_F(FolderTestSuite, size_change_after_add_nodes){
 
-    ASSERT_EQ(0, trash->size());
-    ASSERT_EQ(0, community->size());
-    ASSERT_EQ(0, common->size());
-    ASSERT_EQ(0, favorite->size());
+    ASSERT_DOUBLE_EQ(0, trash->size());
+    ASSERT_DOUBLE_EQ(0, community->size());
+    ASSERT_DOUBLE_EQ(0, common->size());
+    ASSERT_DOUBLE_EQ(0, favorite->size());
     
     addNodes();
     
-    EXPECT_EQ(0, trash->size());
-    EXPECT_EQ(101, community->size());
-    EXPECT_EQ(191.28, common->size());
-    EXPECT_EQ(271.75, favorite->size());
+    EXPECT_DOUBLE_EQ(0, trash->size());
+    EXPECT_DOUBLE_EQ(101, community->size());
+    EXPECT_DOUBLE_EQ(191.28, common->size());
+    EXPECT_DOUBLE_EQ(271.75, favorite->size());
 }
 
 TEST_F(FolderTestSuite, route_change_after_add_nodes){
@@ -132,13 +132,13 @@ TEST_F(FolderTestSuite, get_node){
 
     EXPECT_EQ("9", folder_9->id());
     EXPECT_EQ("community", folder_9->name());
-    EXPECT_EQ(101, folder_9->size());
+    EXPECT_DOUBLE_EQ(101, folder_9->size());
 
     Node* app_6 = favorite->getNodeById("6");
 
     EXPECT_EQ("6", app_6->id());
     EXPECT_EQ("line", app_6->name());
-    EXPECT_EQ(60.66, app_6->size());
+    EXPECT_DOUBLE_EQ(60.66, app_6->size());
 }
 
 TEST_F(FolderTestSuite, get_not_exist_node_should_throw_exception) {
@@ -163,10 +163,10 @@ TEST_F(FolderTestSuite, delete_node){
 
     addNodes();
 
-    ASSERT_EQ(0, trash->size());
-    ASSERT_EQ(101, community->size());
-    ASSERT_EQ(191.28, common->size());
-    ASSERT_EQ(271.75, favorite->size());
+    ASSERT_DOUBLE_EQ(0, trash->size());
+    ASSERT_DOUBLE_EQ(101, community->size());
+    ASSERT_DOUBLE_EQ(191.28, common->size());
+    ASSERT_DOUBLE_EQ(271.75, favorite->size());
 
     ASSERT_NO_THROW(favorite->deleteNodeById("9"));
 
@@ -177,10 +177,10 @@ TEST_F(FolderTestSuite, delete_node){
         ASSERT_EQ("Expected get node but node not found.", e);
     }
 
-    EXPECT_EQ(0, trash->size());
-    EXPECT_EQ(101, community->size());
-    EXPECT_EQ(90.28, common->size());
-    EXPECT_EQ(170.75, favorite->size());
+    EXPECT_DOUBLE_EQ(0, trash->size());
+    EXPECT_DOUBLE_EQ(101, community->size());
+    EXPECT_DOUBLE_EQ(90.28, common->size());
+    EXPECT_DOUBLE_EQ(170.75, favorite->size());
 
     ASSERT_NO_THROW(favorite->deleteNodeById("8"));
 
@@ -191,10 +191,10 @@ TEST_F(FolderTestSuite, delete_node){
         ASSERT_EQ("Expected get node but node not found.", e);
     }
 
-    EXPECT_EQ(0, trash->size());
-    EXPECT_EQ(101, community->size());
-    EXPECT_EQ(90.28, common->size());
-    EXPECT_EQ(80.47, favorite->size());
+    EXPECT_DOUBLE_EQ(0, trash->size());
+    EXPECT_DOUBLE_EQ(101, community->size());
+    EXPECT_DOUBLE_EQ(90.28, common->size());
+    EXPECT_DOUBLE_EQ(80.47, favorite->size());
 }
 
 TEST_F(FolderTestSuite, delete_not_exist_node_should_thorw_exception){
