@@ -3,7 +3,7 @@
 ## **Notice**  
 * **If your code fails to compile on jenkins server, you'll get no point for the assignment.**  
 * **DO NOT use any Type Checking or Dynamic Type that would violate OCP to implement Composite pattern and Iterator pattern, -40 point if you do so.**  
-* **We provide [SAMPLE UT TEST](https://ssl-gitlab.csie.ntut.edu.tw/posd2020f_hw/posd2020f_midterm_1/tree/master/test) and [MAKEFILE](https://ssl-gitlab.csie.ntut.edu.tw/posd2020f_hw/posd2020f_midterm_1/blob/master/makefile), the logic of sample ut test were same as those on the Jenkins TA test with some test data differences, and the makefile is exactly same as TA's.**  
+* **We provide [SAMPLE UT TEST](test) and [MAKEFILE](makefile), the logic of sample ut test were same as those on the Jenkins TA test with some test data differences, and the makefile is exactly same as TA's.**  
 
 ## **Score**  
 * TA Unit Test On Jenkins: 100%  
