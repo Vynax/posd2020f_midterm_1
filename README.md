@@ -1,6 +1,7 @@
 # **Pattern Oriented Software Design 2020 Fall Midterm 1**  
 
 ## **Notice**  
+* **Exam time: 18:00 ~ 21:00, 2020/10/28**  
 * **If your code fails to compile on jenkins server, you'll get no point for the assignment.**  
 * **DO NOT use any Type Checking or Dynamic Type that would violate OCP to implement Composite pattern and Iterator pattern, -40 point if you do so.**  
 * **We provide [SAMPLE UT TEST](test) and [MAKEFILE](makefile), the logic of sample ut test were same as those on the Jenkins TA test with some test data differences, and the makefile is exactly same as TA's.**  
