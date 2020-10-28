@@ -67,20 +67,20 @@ public:
     App - return size of itself.  
     Folder - return sum of all containing nodes size.  
 * `updatePath()`:  
-    App - update the old path with the given path.  
-    Folder - update the old path with the given path and all the childern it contains.  
+    App - update the path with the given path.  
+    Folder - update the path with the given path and update the path of it's children.  
 * `addNode()`:  
-  App - throw std::string "only folder can add node.".  
-  Folder - add node into folder and update the path of the node.  
+    App - throw std::string "only folder can add node.".  
+    Folder - add node into folder and update the path of the node.  
 * `getNodeById()`:  
-  App - throw std::string "only folder can get node.".  
-  Folder - search and return a node through id, search all the containing nodes and the tree structure below, if not found, throw std::string "Expected get node but node not found."  
+    App - throw std::string "only folder can get node.".  
+    Folder - search and return a node through id, search all the containing nodes and the tree structure below, if not found, throw std::string "Expected get node but node not found."  
 * `deleteNodeById()`:  
-  App - throw std::string "only folder can delete node.".  
-  Folder - search and delete a node through id, search all the containing nodes and the tree structure below, if not found, throw std::string "Expected get node but node not found."  
+    App - throw std::string "only folder can delete node.".  
+    Folder - search and delete a node through id, search all the containing nodes and the tree structure below, if not found, throw std::string "Expected get node but node not found."  
 * `createIterator()`:  
-  App - return NullIterator.  
-  Folder - return NodeIterator.  
+    App - return NullIterator.  
+    Folder - return NodeIterator.  
 
 2. Implement class `App` in `app.h`.  
 ```
