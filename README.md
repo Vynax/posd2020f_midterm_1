@@ -13,6 +13,7 @@
 * TA Unit Test On Jenkins: 100%  
 * -10 points for each fail TA test.  
 * -40 for violate OCP as description in notice.  
+* you will lose point for changing given iterface.  
 
 ## **Resources Allowed To Use**  
 [cplusplus](http://www.cplusplus.com/)  
