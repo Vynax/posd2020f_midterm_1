@@ -66,7 +66,7 @@ public:
 * `updatePath()`: update the old path with the given path.  
 * `addNode()`:  
   App - throw std::string "only folder can add node.".  
-  Folder - add node into folder.  
+  Folder - add node into folder and update the path of the node.  
 * `getNodeById()`:  
   App - throw std::string "only folder can get node.".  
   Folder - search and return a node through id, search all the containing nodes and the tree structure below, if not found, throw std::string "Expected get node but node not found."  
