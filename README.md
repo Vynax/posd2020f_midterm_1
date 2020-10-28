@@ -66,7 +66,9 @@ public:
 * `size()`:  
     App - return size of itself.  
     Folder - return sum of all containing nodes size.  
-* `updatePath()`: update the old path with the given path.  
+* `updatePath()`:
+    App - update the old path with the given path.  
+    Folder - update the old path with the given path and all the childern it contains.  
 * `addNode()`:  
   App - throw std::string "only folder can add node.".  
   Folder - add node into folder and update the path of the node.  
