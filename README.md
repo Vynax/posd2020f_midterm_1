@@ -12,7 +12,7 @@
 ## **Score**  
 * TA Unit Test On Jenkins: 100%  
 * Each TA Unit Test is allocated 1 to 5 points according to its difficulty level  
-* Points will be deducted if you change given iterface (for example, removing ```const```.)  
+* Points will be deducted if you change given interface (for example, removing ```const```.)  
 
 ## **Resources Allowed To Use**  
 [cplusplus](http://www.cplusplus.com/)  
