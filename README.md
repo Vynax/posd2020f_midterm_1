@@ -48,7 +48,7 @@ public:
 
         virtual void updatePath(std::string path);
         
-        virtual void addNode(Node *node);
+        virtual void addNode(Node* node);
         
         virtual Node* getNodeById(std::string id) const;
         
