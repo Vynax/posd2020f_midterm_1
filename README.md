@@ -66,7 +66,7 @@ public:
 * `size()`:  
     App - return size of itself.  
     Folder - return sum of all containing nodes size.  
-* `updatePath()`:
+* `updatePath()`:  
     App - update the old path with the given path.  
     Folder - update the old path with the given path and all the childern it contains.  
 * `addNode()`:  
