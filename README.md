@@ -59,7 +59,7 @@ public:
         virtual ~Node();
 };
 ```
-* `path`: should initalize with empty std::string "".  
+* `path`: should initalize with empty std::string.  
 * `id()`: return id.  
 * `name()`: return name.  
 * `route()`: return path + `/` + name.  
@@ -102,7 +102,7 @@ private:
     std::list<Node*> _nodes;
 };
 ```
-* `_nodes`: should initalize with empty structure `{}`.  
+* `_nodes`: should initalize as empty std::list.  
 
 4. Add class `Iterator` in `iterator.h`.  
 ```
