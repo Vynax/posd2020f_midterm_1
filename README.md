@@ -2,7 +2,7 @@
 
 ## **Notice**  
 * **Exam time: 18:00 ~ 21:00, 2020/10/28**  
-* **If you use any website other than [Resources Allowed To Use](#Resources Allowed To Use), you'll get no point for this test.**  
+* **If you use any website other than [Resources Allowed To Use](#resources_allowed_to_use), you'll get no point for this test.**  
 * **If you access others gitlab, you'll get no point for the test.**  
 * **If you use your phone during the test, you'll get no point for the test.**  
 * **If your code fails to compile on jenkins server, you'll get no point for the test.**  
