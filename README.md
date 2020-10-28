@@ -77,7 +77,7 @@ public:
     Folder - search and return a node through id, search all the containing nodes and the tree structure below, if not found, throw std::string "Expected get node but node not found."  
 * `deleteNodeById()`:  
     App - throw std::string "only folder can delete node.".  
-    Folder - search and delete a node through id, search all the containing nodes and the tree structure below, if not found, throw std::string "Expected get node but node not found."  
+    Folder - search and delete a node through id, search all the containing nodes and the tree structure below, if not found, throw std::string "Expected delete node but node not found."  
 * `createIterator()`:  
     App - return NullIterator.  
     Folder - return NodeIterator.  
