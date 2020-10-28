@@ -3,17 +3,16 @@
 ## **Notice**  
 * **Exam time: 18:00 ~ 21:00, 2020/10/28**  
 * **If you use any website other than [Resources Allowed To Use](#resources-allowed-to-use), you'll get no point for this test.**  
-* **If you access others gitlab, you'll get no point for the test.**  
+* **If you access others' ssl-gitlab, you'll get no point for the test.**  
 * **If you use your phone during the test, you'll get no point for the test.**  
 * **If your code fails to compile on jenkins server, you'll get no point for the test.**  
-* **DO NOT use any Type Checking or Dynamic Type that would violate OCP to implement Composite pattern and Iterator pattern, -40 point if you do so.**  
-* **We provide [SAMPLE UT TEST](test) and [MAKEFILE](makefile), the logic of sample ut test were same as those on the Jenkins TA test with some test data differences, and the makefile is exactly same as TA's.**  
+* **DO NOT use any Type Checking or Dynamic Type that would violate OCP to implement Composite pattern and Iterator pattern, if you do so, there will be a deduction of 40% where applicable.**  
+* **We provide [SAMPLE UT TEST](test) and [MAKEFILE](makefile), the logic of sample unit tests are same as those on the Jenkins TA use to test your program but with some data differences. The makefile is exactly same as TA's.**  
 
 ## **Score**  
 * TA Unit Test On Jenkins: 100%  
-* -10 points for each fail TA test.  
-* -40 for violate OCP as description in notice.  
-* you will lose point for changing given iterface.  
+* Each TA Unit Test is allocated 1 to 5 points according to its difficulty level  
+* Points will be deducted if you change given iterface (for example, removing ```const```.)  
 
 ## **Resources Allowed To Use**  
 [cplusplus](http://www.cplusplus.com/)  
@@ -22,7 +21,7 @@
 [GitLab](https://ssl-gitlab.csie.ntut.edu.tw/)  
 
 ## **Problems**
-You can organize the apps on your Home Screen:  
+Write a program to simulate organizing apps and folders on your Home Screen:  
 
 <img src="ios_home_page.jpg" width="250"/>
 
@@ -87,7 +86,7 @@ class App : public Node {
 public:
     App(std::string id, std::string name, double size) {}
     
-    // implement any functions inherit from Shape that you think is suitable.
+    // implement any functions inherit from Node that you think is suitable.
 };
 ```
 
@@ -97,7 +96,7 @@ class Folder : public Node {
 public:
     Folder(std::string id, std::string name) {} // the default size of folder is zero.
     
-    // implement any functions inherit from Shape that you think is suitable.
+    // implement any functions inherit from Node that you think is suitable.
     
 private:
     std::list<Node*> _nodes;
@@ -135,7 +134,7 @@ public:
         // return true
     }
     
-    Shape* currentItem() const {
+    Node* currentItem() const {
         // throw std::string "No child member!"
     }
 };
@@ -163,8 +162,8 @@ public:
         // return true when iterator reach the end of the structure.
     }
     
-    Shape* currentItem() const {
-        // return the shape that iterator currently point at.
+    Node* currentItem() const {
+        // return the Node that iterator currently point at.
     }
 };
 ```
@@ -173,10 +172,10 @@ public:
 ```
 template<class Filter>
 std::deque<Node*> filterNode(Node* node, Filter filter) {
-    // access the shape with iterator pattern.
+    // access the node with iterator pattern.
     // DO NOT use Type Checking or Dynamic Type that would violate OCP to implement the function.
-    // return the shapes under the input shape tree sturctur that match the given filter.
-    // throw std::string "Only folder can filter node!" when the input shape is not iterable.
+    // return the nodes under the input node tree sturctur that match the given filter.
+    // throw std::string "Only folder can filter node!" when the input node is not iterable.
 }
 
 class SizeFilter {
