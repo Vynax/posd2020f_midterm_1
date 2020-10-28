@@ -176,6 +176,7 @@ std::deque<Node*> filterNode(Node *node, Filter filter) {
 }
 
 class SizeFilter {
+public:
     SizeFilter(double upperBound, double lowerBound) {}
     bool operator() (Node* node) const {}
 };
